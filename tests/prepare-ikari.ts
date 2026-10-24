@@ -1,0 +1,10 @@
+export {};
+if(!process.env.DATA_DIR?.includes('frame-browser-ikari-')||!process.env.FRAME_QA_PASSWORD||process.env.FRAME_THEME!=='ikari')throw new Error('Use somente instalação temporária Ikari.');
+const {execFileSync}=await import('node:child_process');
+execFileSync(process.execPath,['--import','tsx','scripts/ikari-seed.ts'],{env:process.env,stdio:'inherit'});
+const {resolve}=await import('node:path');
+execFileSync(process.execPath,['--import','tsx','scripts/ikari-refine.ts'],{env:{...process.env,IKARI_EXCERPT_SOURCE_DIR:resolve('.superpowers/ikari-v06-source')},stdio:'inherit'});
+const {provisionOwner}=await import('../src/lib/server/auth');
+const {sqlite}=await import('../src/lib/server/db');
+await provisionOwner('editor@example.test',process.env.FRAME_QA_PASSWORD);
+sqlite.close();console.log('Ikari temporário de QA preparado.');

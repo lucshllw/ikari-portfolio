@@ -1,0 +1,238 @@
+/* FRAME / sala de montagem. Overrides confined to the private interface. */
+.admin-shell,.login-shell{--paper:#f1efe7;--ink:#202323;--muted:#666965;--line:#cdcec7;--white:#f9f8f4;--accent:#344ccd;--on-accent:#fff;color:var(--ink);background:var(--paper)}
+.admin-shell{grid-template-columns:230px minmax(0,1fr)}
+.admin-shell .admin-sidebar{padding:34px 0 28px;background:#202323;color:#f1efe7;border:0;gap:0;z-index:10}
+.sidebar-brand{padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.admin-shell .wordmark,.login-shell .wordmark{font-size:34px;letter-spacing:-1.7px;line-height:1;gap:6px}
+.admin-brand-cut{display:inline-block;background:#344ccd;width:7px;height:7px;align-self:flex-end;margin-bottom:4px}
+.admin-shell .workspace{margin:18px 28px 36px;display:flex;flex-direction:column;align-items:flex-start;gap:5px;padding:0;border:0;border-radius:0;color:#c5c6c0}
+.admin-shell .workspace strong{font-size:12px;font-weight:500;max-width:100%;overflow-wrap:anywhere}
+.admin-shell .workspace>span{background:none;width:auto;height:auto;font:11px var(--sans,sans-serif)}
+.admin-navigation{display:flex;flex-direction:column;flex:1;min-height:0}
+.admin-shell .admin-sidebar nav{gap:4px}
+.admin-shell .admin-sidebar nav a{color:#e6e6df;min-height:48px;padding:13px 28px;border-radius:0;font-size:13px;gap:12px}
+.admin-shell .admin-sidebar nav a:hover{background:#323633;color:#fff}
+.admin-shell .admin-sidebar nav a.active{background:#344ccd;color:white;font-weight:600}
+.admin-shell .admin-sidebar nav svg{flex:none}
+.admin-shell .sidebar-bottom{border-top:1px solid #525752;margin:36px 28px 0;padding-top:18px;gap:8px;font-size:12px}
+.admin-shell .sidebar-bottom a,.admin-shell .sidebar-bottom button{min-height:44px;color:#e6e6df;font-size:12px;display:flex;align-items:center;gap:10px}
+.admin-shell .sidebar-bottom a{justify-content:space-between}
+.admin-shell .sidebar-bottom button{width:100%;text-align:left}
+.admin-menu-toggle{display:none}
+.admin-shell .admin-topbar{height:66px;padding:0 clamp(24px,3.3vw,54px);font:10px ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em}
+.private-label{display:inline-flex;align-items:center;gap:8px;font:11px var(--sans,sans-serif);letter-spacing:0;color:#666965}
+.admin-shell .dot{background:#344ccd}
+.admin-shell .admin-content{padding:38px clamp(24px,3.3vw,54px) 64px;max-width:1480px}
+.admin-shell .admin-heading{margin-bottom:30px;gap:24px;align-items:center}
+.admin-shell .admin-heading h1{font-size:clamp(32px,3.25vw,48px);font-weight:600;letter-spacing:-.055em;line-height:1.04}
+.admin-shell .admin-heading p{font-size:13px;max-width:580px;line-height:1.75;margin-top:12px}
+.admin-shell .btn,.login-shell .btn{border-radius:2px;min-height:46px;padding:12px 20px;font-size:13px;transition:background .18s,border-color .18s}
+.admin-shell .btn:hover,.login-shell .btn:hover{transform:none;background:#343936}
+.admin-shell .btn.accent,.login-shell .btn.accent{background:#344ccd;border-color:#344ccd;color:#fff}
+.admin-shell .btn.accent:hover,.login-shell .btn.accent:hover{background:#293fb7;border-color:#293fb7}
+.admin-shell .btn.secondary,.login-shell .btn.secondary{background:transparent;color:#202323;border-color:#bfc1ba}
+.admin-shell .btn.secondary:hover{background:#e7e6dd}
+.admin-shell .text-link{font-size:12px;color:#344ccd;min-height:40px}
+.admin-shell .pill{border-radius:2px;font-size:12px;padding:9px 12px;flex-shrink:0}
+.admin-shell .panel{background:transparent;border:0;border-top:1px solid #c5c6c0;border-radius:0;padding:24px 0;margin-bottom:26px}
+.admin-shell .panel-title{margin-bottom:22px;align-items:center}
+.admin-shell .panel-title h2{font-size:24px;font-weight:600;letter-spacing:-.045em;line-height:1.2}
+.admin-shell .panel-title p{font-size:12px;line-height:1.6}
+.admin-shell .stats{gap:16px;margin-bottom:38px}
+.admin-shell .stat{background:transparent;border:1px solid #cdcec7;border-radius:0;padding:20px 20px 18px;position:relative}
+.admin-shell .stat p{font-size:12px;color:#414641;gap:8px}
+.admin-shell .stat strong{font-size:46px;font-weight:500;letter-spacing:-.05em;margin:14px 0 5px;line-height:1}
+.admin-shell .stat small{font-size:11px;line-height:1.6}
+.admin-shell .dashboard-split{grid-template-columns:minmax(0,1fr) minmax(230px,.4fr);gap:32px}
+.admin-shell .dashboard-split>div{min-width:0}
+.admin-shell .notice-card{background:transparent;border-radius:0;padding:0 0 26px}
+.admin-shell .notice-card .dashboard-photo{width:100%;aspect-ratio:.82;object-fit:cover;border-radius:1px;margin-bottom:24px}
+.admin-shell .notice-card h3{font-size:29px;font-weight:600;line-height:1.1;max-width:290px;margin:0 0 14px;letter-spacing:-.05em}
+.admin-shell .notice-card p{font-size:12px;line-height:1.8;max-width:280px;margin-bottom:15px}
+.admin-shell .notice-card .btn{background:transparent;border:0;color:#344ccd;padding:0;justify-content:flex-start}
+.admin-shell .quick-actions{gap:0}
+.admin-shell .quick-actions a{background:transparent;border:0;border-bottom:1px solid #cdcec7;border-radius:0;min-height:58px;padding:15px 0;font-size:12px}
+.admin-shell .quick-actions a:hover{color:#344ccd}
+.admin-shell .dashboard-split .quick-panel .panel-title{display:none}
+.admin-shell .table-scroll{max-width:100%}
+.admin-shell .data-table{font-size:12px;white-space:normal;table-layout:auto}
+.admin-shell .data-table th{font-size:11px;padding:0 10px 14px;color:#4f554f;font-weight:500}
+.admin-shell .data-table td{padding:18px 10px;border-bottom:1px solid #cdcec7;vertical-align:middle}
+.admin-shell .data-table th:first-child,.admin-shell .data-table td:first-child{padding-left:0}
+.admin-shell .data-table th:last-child,.admin-shell .data-table td:last-child{padding-right:0}
+.admin-shell .table-project{gap:16px;min-width:190px}
+.admin-shell .table-project img{width:98px;height:60px;border-radius:1px;flex:none;object-fit:cover}
+.admin-shell .table-project b{font-size:13px;line-height:1.5;overflow-wrap:anywhere}
+.admin-shell .table-project span{font:10px ui-monospace,SFMono-Regular,Consolas,monospace;margin-top:5px;overflow-wrap:anywhere}
+.admin-shell .row-actions{gap:8px;flex-wrap:wrap}
+.admin-shell .row-actions form{display:inline-flex;gap:2px}
+.admin-shell .row-actions a,.admin-shell .row-actions button{font-size:12px;color:#344ccd;min-height:44px}
+.admin-shell .row-actions button{padding:9px 6px}
+.admin-shell .row-actions button[name=direction]{min-width:44px;border:1px solid #cdcec7;color:#202323}
+.admin-shell .status-tag{font-size:11px;border-radius:2px;padding:7px 9px;background:#dcded8;color:#414640;white-space:nowrap}
+.admin-shell .status-tag.published,.admin-shell .status-tag.converted{background:#d9e6d9;color:#31533b}
+.admin-shell .status-tag.new{background:#e0e5fa;color:#293da0}
+.admin-shell .admin-empty,.admin-shell .empty{border:1px solid #cdcec7;background:transparent;border-radius:0;padding:44px 22px;font-size:13px;line-height:1.8}
+.admin-shell .admin-empty svg{margin:0 auto 15px;color:#767c76}
+.admin-shell .fineprint,.login-shell .fineprint{font-size:11px;line-height:1.8;max-width:520px}
+.admin-shell .field label,.login-shell .field label{font-size:12px;line-height:1.5;font-weight:500}
+.admin-shell .field input,.admin-shell .field textarea,.admin-shell .field select,.login-shell .field input{border:1px solid #bfc2ba;border-radius:2px;background:#f9f8f4;padding:12px 13px;min-height:46px;font-size:13px;color:#202323}
+.admin-shell .field input[type=color]{padding:5px;width:100%;max-width:180px;cursor:pointer}
+.admin-shell .field input[type=checkbox]{accent-color:#344ccd}
+.admin-shell .field input[type=file]{padding:9px;width:100%;max-width:100%;font-size:12px}
+.admin-shell .field input::file-selector-button{background:#e8e9e2;border:1px solid #bfc2ba;border-radius:2px;padding:6px 9px;font:inherit;cursor:pointer;margin-right:8px}
+.admin-shell .field small{font-size:11px;line-height:1.6}
+.admin-shell .form-grid{gap:22px}
+.admin-shell .form-actions{gap:12px;margin-top:24px}
+.admin-shell .alert,.login-shell .alert{border-radius:2px;border-left:3px solid #8a341f;font-size:13px}
+.admin-shell .alert.success{border-left-color:#31533b;background:#dce7d8;color:#31533b}
+.admin-shell .editor-layout{grid-template-columns:minmax(0,1fr) minmax(230px,.45fr);gap:40px}
+.admin-shell .editor-preview{border:1px solid #cdcec7;padding:20px;top:24px}
+.admin-shell .editor-preview img{border-radius:1px;aspect-ratio:16/10}
+.admin-shell .editor-preview h3{font-size:27px;font-weight:500;overflow-wrap:anywhere}
+.admin-shell .editor-preview p{font-size:12px;overflow-wrap:anywhere}
+.admin-shell .editor-preview .panel-title h2{font-size:20px}
+.admin-shell .media-grid{gap:26px 22px}
+.admin-shell .media-item{min-width:0;border-bottom:1px solid #cdcec7;padding-bottom:20px}
+.admin-shell .media-item img{border-radius:1px;aspect-ratio:16/9}
+.admin-shell .media-item p{font-size:12px;line-height:1.6}
+.admin-shell .media-item small{font:10px ui-monospace,SFMono-Regular,Consolas,monospace}
+.admin-shell .media-item .btn{border:0;padding:0;color:#344ccd;background:transparent;min-height:40px}
+.admin-shell .category-row{background:#e7e6de;border:0;padding:22px;margin-bottom:14px}
+.admin-shell .category-row form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:end}
+.admin-shell .category-row .form-grid{grid-template-columns:1fr 1fr minmax(64px,.3fr);gap:14px}
+.admin-shell .category-row .form-actions{margin:0;gap:8px}
+.admin-shell .category-row .btn{padding:12px}
+.admin-shell .photo-heading{display:grid;grid-template-columns:minmax(0,1fr) minmax(200px,.45fr);gap:35px;align-items:center;border-bottom:1px solid #cdcec7;padding-bottom:32px}
+.admin-shell .photo-heading img{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:1px}
+.admin-shell .photo-heading .heading-link{margin-top:12px}
+.admin-shell .inquiry-card{border:1px solid #cdcec7;background:transparent;border-radius:0;padding:28px;margin-bottom:20px;grid-template-columns:minmax(0,1fr) 180px;gap:32px}
+.admin-shell .inquiry-card h2{font-size:27px;letter-spacing:-.035em;font-weight:500}
+.admin-shell .inquiry-card p{font-size:13px;overflow-wrap:anywhere;max-width:75ch}
+.admin-shell .inquiry-card a{font-size:12px;overflow-wrap:anywhere}
+.admin-shell .inquiry-card time{font:11px ui-monospace,SFMono-Regular,Consolas,monospace}
+.admin-shell .inquiry-card form{gap:12px}
+.admin-shell .inquiry-status-label{font-size:12px;line-height:1.5;color:#414641}
+.admin-shell .inquiry-count{margin-top:16px}
+.admin-shell .inquiry-empty{padding-top:60px;padding-bottom:60px;margin-bottom:28px}
+.admin-shell .table-edit{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;color:#344ccd}
+.admin-shell .inquiry-card select{padding:12px;min-height:46px;font-size:12px;border-radius:2px;background:#f9f8f4;border-color:#bfc2ba;max-width:100%}
+.login-shell{grid-template-columns:minmax(0,1.15fr) minmax(320px,.65fr);min-height:100dvh;max-width:1600px;margin:auto}
+.login-shell .login-form-wrap{padding:42px clamp(30px,6.5vw,105px) 60px;align-items:flex-start;justify-content:space-between;gap:80px}
+.login-shell .login-brand{font-size:36px}
+.login-shell .login-form{width:100%;max-width:430px}
+.login-shell .login-form h1{font-size:clamp(48px,5.9vw,86px);letter-spacing:-.06em;line-height:.99;font-weight:600;margin:20px 0}
+.login-shell .login-caption{font:11px ui-monospace,SFMono-Regular,Consolas,monospace;color:#4d534d;margin-bottom:0}
+.login-shell .login-form>p:not(.login-caption):not(.fineprint){font-size:14px;line-height:1.8;margin-bottom:35px}
+.login-shell .login-form .field{margin-bottom:22px}
+.login-shell .login-form .btn{justify-content:space-between;width:100%;margin-top:6px;min-height:54px}
+.login-back{color:#344ccd;margin-top:25px;min-height:44px}
+.login-shell .login-form .fineprint{margin-top:18px;font-size:11px}
+.login-shell .login-art{display:flex;padding:25px 25px 30px 0;background:transparent;gap:20px;justify-content:flex-start}
+.login-shell .login-art img{width:100%;flex:1;min-height:400px;height:68dvh;max-height:none;object-fit:cover;mix-blend-mode:normal;border-radius:0}
+.login-art-note{display:flex;justify-content:space-between;gap:24px;align-items:center;min-height:90px;flex-shrink:0;font:10px/1.65 ui-monospace,SFMono-Regular,Consolas,monospace;letter-spacing:.04em}
+.login-art-note i{display:block;width:35%;height:90px;background:#344ccd}
+.admin-shell :focus-visible,.login-shell :focus-visible{outline:3px solid #344ccd;outline-offset:3px}
+.admin-shell .admin-sidebar :focus-visible{outline-color:#e8edff}
+@media(max-width:1200px){
+.admin-shell{grid-template-columns:210px minmax(0,1fr)}
+.admin-shell .dashboard-split{grid-template-columns:minmax(0,1fr) 235px;gap:25px}
+.admin-shell .admin-content{padding:32px 28px 56px}
+.admin-shell .admin-topbar{padding:0 28px}
+.admin-shell .category-row form{grid-template-columns:1fr;gap:18px}
+.admin-shell .category-row .form-actions{justify-content:flex-end}
+.admin-shell .table-project img{width:74px;height:52px}
+.admin-shell .table-project{min-width:160px;gap:12px}
+.admin-shell .data-table th,.admin-shell .data-table td{padding-left:7px;padding-right:7px}
+}
+@media(max-width:1000px){
+.admin-shell .dashboard-split{grid-template-columns:1fr}
+.admin-shell .dashboard-split>div:last-child{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.admin-shell .notice-card .dashboard-photo{aspect-ratio:16/9;max-height:230px}
+.admin-shell .editor-layout{grid-template-columns:minmax(0,1fr) 230px;gap:25px}
+.admin-shell .stats{gap:10px}
+.admin-shell .stat{padding:18px 14px}
+.admin-shell .stat p svg{display:none}
+.admin-shell .media-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+.admin-shell .photo-heading{grid-template-columns:minmax(0,1fr) 200px;gap:22px}
+}
+@media(max-width:760px){
+.admin-shell{display:block}
+.admin-shell .admin-sidebar{position:relative;height:auto;padding:20px;gap:0;border:0}
+.sidebar-brand{padding:0}
+.admin-shell .admin-sidebar .wordmark{font-size:30px}
+.admin-menu-toggle{display:none;align-items:center;justify-content:center;gap:8px;background:transparent;color:#f1efe7;border:1px solid #636861;border-radius:2px;min-height:44px;padding:10px 12px;font-size:12px}
+.admin-shell.admin-enhanced .admin-menu-toggle{display:inline-flex}
+.admin-shell .workspace{display:none}
+.admin-navigation{display:flex;padding-top:22px}
+.admin-shell.admin-enhanced .admin-navigation:not(.is-open){display:none}
+.admin-shell .admin-sidebar nav{flex-direction:column;overflow:visible;margin:0;gap:5px}
+.admin-shell .admin-sidebar nav a{padding:13px 15px;white-space:normal;font-size:13px;gap:12px}
+.admin-shell .sidebar-bottom{position:static;margin:20px 0 0;padding-top:12px;flex-direction:column;gap:0}
+.admin-shell .sidebar-bottom form button span{display:inline}
+.admin-shell .sidebar-bottom a{font-size:12px;justify-content:flex-start}
+.admin-shell .admin-topbar{height:52px;padding:0 20px;font-size:9px}
+.private-label{font-size:10px}
+.admin-shell .admin-content{padding:29px 20px 50px}
+.admin-shell .admin-heading{align-items:flex-start;gap:20px;flex-wrap:wrap;margin-bottom:25px}
+.admin-shell .admin-heading h1{font-size:38px}
+.admin-shell .admin-heading p{font-size:12px;margin-top:12px}
+.admin-shell .admin-heading>.btn{align-self:flex-start}
+.admin-shell .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-bottom:30px}
+.admin-shell .stat{padding:14px 10px;display:block}
+.admin-shell .stat p{font-size:11px;line-height:1.5;min-height:33px}
+.admin-shell .stat strong{font-size:36px;margin:12px 0 0}
+.admin-shell .stat small{display:none}
+.admin-shell .panel{padding:22px 0;margin-bottom:20px}
+.admin-shell .panel-title h2{font-size:24px}
+.admin-shell .dashboard-split>div:last-child{display:block}
+.admin-shell .notice-card .dashboard-photo{max-height:none;aspect-ratio:16/9}
+.admin-shell .notice-card{margin-bottom:20px}
+.admin-shell .table-scroll{overflow:visible}
+.admin-shell .data-table,.admin-shell .data-table tbody,.admin-shell .data-table tr,.admin-shell .data-table td{display:block;width:100%}
+.admin-shell .data-table thead{display:none}
+.admin-shell .data-table tr{padding:18px 0;border-top:1px solid #cdcec7;display:grid;grid-template-columns:1fr auto;gap:8px 12px}
+.admin-shell .data-table td{padding:4px 0!important;border:0;min-width:0}
+.admin-shell .data-table td:first-child{grid-column:1/-1}
+.admin-shell .data-table td[data-label]:before{content:attr(data-label);display:block;font-size:10px;color:#666965;margin-bottom:6px}
+.admin-shell .data-table td[data-label="Ações"]{grid-column:1/-1;border-top:1px solid #dedfd7;padding-top:8px!important}
+.admin-shell .table-project{min-width:0;gap:14px}
+.admin-shell .table-project img{width:96px;height:60px}
+.admin-shell .table-project b{font-size:14px}
+.admin-shell .row-actions{gap:16px}
+.admin-shell .editor-layout{grid-template-columns:1fr;gap:0}
+.admin-shell .editor-preview{position:static;order:0;padding:20px;border:1px solid #cdcec7;margin-top:32px}
+.admin-shell .editor-preview img{max-height:none;aspect-ratio:16/9}
+.admin-shell .form-grid{grid-template-columns:1fr;gap:22px}
+.admin-shell .form-grid .field{grid-column:auto}
+.admin-shell .category-row{padding:20px;margin-bottom:14px}
+.admin-shell .category-row .form-grid{grid-template-columns:1fr}
+.admin-shell .category-row .form-actions{justify-content:flex-start}
+.admin-shell .media-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:25px 14px}
+.admin-shell .media-item p{font-size:12px}
+.admin-shell .photo-heading{grid-template-columns:1fr;gap:22px;padding-bottom:25px}
+.admin-shell .photo-heading img{max-height:200px}
+.admin-shell .inquiry-card{grid-template-columns:1fr;padding:22px;gap:24px}
+.admin-shell .inquiry-card form{flex-direction:column;align-items:stretch;border-top:1px solid #cdcec7;padding-top:22px}
+.admin-shell .inquiry-card h2{font-size:27px}
+.login-shell{grid-template-columns:1fr;display:block}
+.login-shell .login-form-wrap{min-height:100dvh;padding:30px 24px 45px;gap:75px}
+.login-shell .login-brand{font-size:33px}
+.login-shell .login-form{max-width:500px}
+.login-shell .login-form h1{font-size:clamp(47px,12vw,72px);margin:18px 0}
+.login-shell .login-form>p:not(.login-caption):not(.fineprint){font-size:13px;margin-bottom:28px}
+.login-shell .login-art{display:none}
+}
+@media(max-width:360px){
+.admin-shell .admin-content{padding-left:16px;padding-right:16px}
+.admin-shell .admin-heading h1{font-size:34px}
+.admin-shell .admin-topbar{padding:0 16px}
+.admin-shell .stats{grid-template-columns:1fr}
+.admin-shell .stat{display:flex;align-items:center;justify-content:space-between;padding:14px 16px}
+.admin-shell .stat p{min-height:0}
+.admin-shell .stat strong{margin:0;font-size:32px}
+.admin-shell .media-grid{grid-template-columns:1fr}
+.admin-shell .table-project img{width:82px;height:55px}
+.login-shell .login-form-wrap{padding:28px 20px 40px;gap:60px}
+}
+@media(prefers-reduced-motion:reduce){.admin-shell *,.login-shell *{transition:none!important}}

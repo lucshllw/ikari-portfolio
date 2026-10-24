@@ -1,0 +1,26 @@
+// Current published thumbnails, verified against cloud checksums. New media IDs bypass this snapshot.
+export const ikariCoverCache:Record<string,string> = {
+  "/media/0488d01c-d75b-4c89-9257-0e8e80533512": "/ikari/covers/0488d01c-d75b-4c89-9257-0e8e80533512-d284e61e92e4.webp",
+  "/media/10767404-6a2e-4357-a173-68780a254912": "/ikari/covers/10767404-6a2e-4357-a173-68780a254912-870c14ca1102.webp",
+  "/media/19f62008-af48-414d-bf62-b91297a6d3fb": "/ikari/covers/19f62008-af48-414d-bf62-b91297a6d3fb-3f53d307a01f.webp",
+  "/media/222ee793-1b67-4db5-a101-d516b14d4465": "/ikari/covers/222ee793-1b67-4db5-a101-d516b14d4465-664aadd89902.webp",
+  "/media/23e0f00b-e4f1-4cea-bf26-a7115dd3c16c": "/ikari/covers/23e0f00b-e4f1-4cea-bf26-a7115dd3c16c-7da28da0c482.webp",
+  "/media/2c207a52-6d7a-4dd5-80b4-80e2562a0694": "/ikari/covers/2c207a52-6d7a-4dd5-80b4-80e2562a0694-c887f238d1a2.webp",
+  "/media/38cb8486-9a68-4c1f-b6c4-3c14ecf700df": "/ikari/covers/38cb8486-9a68-4c1f-b6c4-3c14ecf700df-2f035daeb596.webp",
+  "/media/3935f8a0-336b-4959-a6ec-e8570ed67c5d": "/ikari/covers/3935f8a0-336b-4959-a6ec-e8570ed67c5d-e644d606c226.webp",
+  "/media/3d167db4-c8c7-4160-9652-8298a81271a2": "/ikari/covers/3d167db4-c8c7-4160-9652-8298a81271a2-f7ba4d300fb7.webp",
+  "/media/46d32a9c-ddd8-4a27-a278-cbc4303ba3be": "/ikari/covers/46d32a9c-ddd8-4a27-a278-cbc4303ba3be-7a4c309b43c2.webp",
+  "/media/49909bc9-7fed-447e-934f-061d79b03193": "/ikari/covers/49909bc9-7fed-447e-934f-061d79b03193-cc61e5677952.webp",
+  "/media/6eb2632b-63ed-4d9b-b662-90704aa39c06": "/ikari/covers/6eb2632b-63ed-4d9b-b662-90704aa39c06-32d4d966b6e2.webp",
+  "/media/85dbecf0-ea76-4f9d-a8e7-4ba00711eb7c": "/ikari/covers/85dbecf0-ea76-4f9d-a8e7-4ba00711eb7c-25189fdf3304.webp",
+  "/media/877dfc7e-3be2-47ec-ba28-5406609b70b4": "/ikari/covers/877dfc7e-3be2-47ec-ba28-5406609b70b4-554871809fde.webp",
+  "/media/8da57be1-072c-4a06-b7a8-9c0d081b00c5": "/ikari/covers/8da57be1-072c-4a06-b7a8-9c0d081b00c5-d37e3a03d11a.webp",
+  "/media/8f76e33c-ed23-4729-b334-a884516f9060": "/ikari/covers/8f76e33c-ed23-4729-b334-a884516f9060-db641aaf08a3.webp",
+  "/media/97b46e89-9043-4402-8671-dbb9d4040dd8": "/ikari/covers/97b46e89-9043-4402-8671-dbb9d4040dd8-0a27c4555747.webp",
+  "/media/a6eb93b5-c079-4523-a43f-dc9b9ca11637": "/ikari/covers/a6eb93b5-c079-4523-a43f-dc9b9ca11637-68bf4bb70e58.webp",
+  "/media/c253314b-1ad8-4f26-9317-3c2db5f80893": "/ikari/covers/c253314b-1ad8-4f26-9317-3c2db5f80893-57d01b63c021.webp",
+  "/media/c73876b3-dd54-4308-ae90-9ee1dfae2f3f": "/ikari/covers/c73876b3-dd54-4308-ae90-9ee1dfae2f3f-148b0c2869e4.webp",
+  "/media/ccd00e2a-6dc8-4dc1-95ba-a87955cbe778": "/ikari/covers/ccd00e2a-6dc8-4dc1-95ba-a87955cbe778-4c7dc64d1640.webp",
+  "/media/ec893263-f11e-42ec-a2c2-81915c97afd7": "/ikari/covers/ec893263-f11e-42ec-a2c2-81915c97afd7-cb56ff8b1886.webp",
+  "/media/ec98c44c-fe6c-419b-b76f-7a55e2b635ce": "/ikari/covers/ec98c44c-fe6c-419b-b76f-7a55e2b635ce-3072a0e164d7.webp"
+};

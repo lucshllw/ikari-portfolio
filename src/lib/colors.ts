@@ -1,0 +1,1 @@
+export function contrastText(hex:string):string {const channels=hex.replace('#','').match(/.{2}/g)?.map(v=>parseInt(v,16)/255)||[0,0,0];const [r,g,b]=channels.map(c=>c<=.04045?c/12.92:((c+.055)/1.055)**2.4);return .2126*r+.7152*g+.0722*b>.179?'#252521':'#ffffff';}

@@ -1,0 +1,5 @@
+import {expect,it} from 'vitest';
+import {boundedForm,applyAuthCookies} from '../src/lib/http.server';
+it('limits form bodies even when content-length is missing',async()=>{const request=new Request('http://127.0.0.1:4173/contato',{method:'POST',headers:{'content-type':'application/x-www-form-urlencoded'},body:'brief='+('x'.repeat(40000))});await expect(boundedForm(request)).rejects.toThrow();});
+it('parses a valid small form',async()=>{const request=new Request('http://127.0.0.1:4173/contato',{method:'POST',headers:{'content-type':'application/x-www-form-urlencoded'},body:'name=Teste&brief=Ideia'});expect((await boundedForm(request)).get('name')).toBe('Teste');});
+it('retains httpOnly and sameSite flags while applying auth cookies',()=>{const calls:unknown[]=[];const headers=new Headers();headers.append('set-cookie','session=value; Path=/; HttpOnly; SameSite=Lax; Max-Age=3600');applyAuthCookies(headers,{set:(...args:unknown[])=>calls.push(args)} as never);expect(calls).toEqual([['session','value',expect.objectContaining({path:'/',httpOnly:true,sameSite:'lax',maxAge:3600})]]);});
